@@ -59,16 +59,16 @@ const Collaboration = () => {
                         </div>
 
                         <ul>
-                            {collabApps.map((app, index) => (
+                            {collabApps.map((app, i) => (
                                 <li
                                     key={app.id}
                                     className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
-                                        index * 45
+                                        i * 45
                                     }`}
                                 >
                                     <div
                                         className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
-                                            index * 45
+                                            i * 45
                                         }`}
                                     >
                                         <img
